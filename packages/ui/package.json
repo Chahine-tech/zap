@@ -2,25 +2,29 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "main": "./src/index.ts",
   "exports": {
+    ".": "./src/index.ts",
     "./*": "./src/*.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component",
+    "generate:component": "turbo gen solidjs-component",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.31.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
     "typescript": "5.8.2"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "clsx": "^2.1.1",
+    "solid-js": "^1.8.22",
+    "tailwind-merge": "^2.5.5"
   }
 }

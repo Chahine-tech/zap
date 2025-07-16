@@ -3,5 +3,16 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "rust-analyzer.linkedProjects": [
+    "./apps/app/src-tauri/Cargo.toml"
+  ],
+  "rust-analyzer.files.excludeDirs": [
+    "node_modules",
+    "dist",
+    "build"
+  ],
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.diagnostics.enable": true
 }
